@@ -15,7 +15,7 @@ def readme():
         return f.read()
 
 
-setup(name='WF_NTP',
+setup(name='WF_NTP_CLI',
       version='3.3.3',
       description='Wide-field nematode tracking platform.',
       long_description=readme(),
@@ -26,7 +26,7 @@ setup(name='WF_NTP',
           'Topic :: Scientific/Engineering',
       ],
       keywords='nematode worm tracker',
-      url='https://github.com/impact27/WF_NTP',
+      url='https://github.com/Lilly-May/wf-ntp-cli',
       author='TODO',
       author_email='TODO',
       license='CC BY-NC-SA 4.0',
@@ -39,16 +39,14 @@ setup(name='WF_NTP',
           "pandas>=0.16.2",
           "Pillow>=2.9.0",
           "PIMS>=0.2.2",
-          "scikit_image<0.16", #<0.20
+          "scikit_image<0.16",
           "scipy>=0.16.0",
           "tifffile>=2015.8.17",
           "trackpy>=0.2.4"
       ],
       scripts=[
-          'run_script/multiwormtracker_app.py',
-          'run_script/multiwormtracker_app',
+          'src/wf_ntp_cli.py',
+          'src/WF_NTP_script.py'
       ],
-      # test_suite='nose.collector',
-      # tests_require=['nose', 'nose-cover3'],
       include_package_data=True,
       zip_safe=False)
