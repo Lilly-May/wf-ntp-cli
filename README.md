@@ -1,6 +1,7 @@
 # wf-ntp-cli
 
-The WF_NTP_script.py file was copied from the [original repository](https://github.com/impact27/WF_NTP) and only a small code section was added.
+The WF_NTP_script.py file was copied from the [original WF-NTP repository](https://github.com/impact27/WF_NTP) and only a small code section was 
+added to enable the extraction and saving of 11 spine points per larva per frame.
 
 This repo provides a way to run WF-NTP as a command line tool to enable large-scale processing of videos.
 
